@@ -59,7 +59,7 @@ export function LoggedNavbar() {
     const [open, setOpen] = useState(false);
     const navigate = useNavigate();
     const { token } = useSelector((state) => state.user);
-    const { fullname, img: avatar } = useSelector((state) => state.profile);
+    const { id, fullname, img: avatar } = useSelector((state) => state.profile);
     const [profileUrl, _] = useState(`${import.meta.env.VITE_BASE_URL}/profile/${avatar}`)
 
     useEffect(() => {
@@ -109,7 +109,7 @@ export function LoggedNavbar() {
                         <p
                             className='text-[#4F5665]'
                         >{fullname ? fullname : "User"}</p>
-                        <img src={profileUrl} alt=""
+                        <img src={avatar ? profileUrl : `https://api.dicebear.com/9.x/open-peeps/png?seed==${id}`} alt=""
                             className='size-10 rounded-full object-cover'
                         />
                         <div onClick={() => { setOpen(!open) }}

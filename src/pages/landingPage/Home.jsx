@@ -14,7 +14,7 @@ const BENEFITS = [
   },
   {
     title: "Easy Download",
-    desc: "Zwallet is 100% totally free to use it’s now available on Google Play Store and App Store.",
+    desc: "Prospera is 100% totally free to use it’s now available on Google Play Store and App Store.",
     img: "easy-download.svg",
   },
 ];
@@ -100,7 +100,7 @@ export const Home = () => {
       >
         <h2 className="text-4xl md:text-6xl md:text-center">
           <div>Experience the Future of Digital</div>
-          <div>Payments with e-wallet</div>
+          <div>Payments with Prospera</div>
         </h2>
         <div className="flex flex-col md:flex-row-reverse md:gap-36 ">
           <div className="md:mt-20 flex flex-col gap-8">
@@ -186,14 +186,14 @@ export const Home = () => {
         </div>
         <div className="flex flex-col items-center md:items-start gap-8">
           <div className="font-bold text-lg text-[#2948FF]">
-            WELCOME TO E-WALLET
+            WELCOME TO PROSPERA
           </div>
           <div className="font-medium text-3xl text-[#0B132A]">
             Your All-in-One Digital Payment Solution
           </div>
           <div className="font-normal text-lg text-[#4F5665]">
             Say goodbye to cash and hello to the future of payments! With
-            e-wallet, you have the power of secure, fast, and convenient digital
+            Prospera, you have the power of secure, fast, and convenient digital
             transactions right at your fingertips. Whether you're shopping,
             dining out, or sending money to loved ones, we've got you covered.
           </div>
@@ -218,7 +218,7 @@ export const Home = () => {
 
         <div className="flex flex-col gap-4">
           <div className="font-medium text-3xl text-[#1E1E1E]">
-            All The Great Zwallet Features.
+            All The Great Prospera Features.
           </div>
           <div className=" text-lg text-[#1E1E1E]">
             We have some great features from the application and it’s totally
@@ -281,7 +281,7 @@ export const Home = () => {
             What Our Users Are Saying
           </div>
           <div className="font-normal text-lg text-center text-[#4F5665]">
-            Ready to experience the future of payments? Download e-wallet now
+            Ready to experience the future of payments? Download Prospera now
             and enjoy a world of convenience at your fingertips.
           </div>
 
@@ -315,7 +315,7 @@ export const Home = () => {
 
               {/* User review */}
               <div className="font-normal text-lg text-center text-[#FFFFFF]">
-                I've been using the e-wallet for over two years now, and I'm
+                I've been using the Prospera for over two years now, and I'm
                 very satisfied with the ease of use. This has completely changed
                 the way I shop and conduct financial transactions.
               </div>
@@ -349,7 +349,7 @@ export const Home = () => {
             Download The App
           </div>
           <div className="font-normal text-lg text-[#0B132A]">
-            Ready to experience the future of payments? Download e-wallet now
+            Ready to experience the future of payments? Download Prospera now
             and enjoy a world of convenience at your fingertips.
           </div>
 

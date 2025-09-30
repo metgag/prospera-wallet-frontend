@@ -2,6 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   // User rofile data
+  id: 0,
   fullname: null,
   email: null,
   phone: null,
@@ -13,6 +14,8 @@ const initialState = {
   isSuccess: false,
   isFailed: false,
   error: null,
+
+  isUpdated: false,
 };
 
 const getProfileThunk = createAsyncThunk(
@@ -142,6 +145,9 @@ const profileSlice = createSlice({
       state.isFailed = false;
       state.error = null;
     },
+    resetUpdateState(state) {
+      state.isUpdated = false;
+    },
   },
 
   extraReducers: (builder) =>
@@ -154,6 +160,7 @@ const profileSlice = createSlice({
       })
 
       .addCase(getProfileThunk.fulfilled, (state, { payload }) => {
+        state.id = payload.data.id;
         state.fullname = payload.data.full_name;
         state.email = payload.data.email;
         state.phone = payload.data.phone_number;
@@ -190,6 +197,8 @@ const profileSlice = createSlice({
         // UI states
         state.isLoading = false;
         state.isSuccess = true;
+
+        state.isUpdated = true;
       })
 
       .addCase(updateProfileThunk.rejected, (state, action) => {

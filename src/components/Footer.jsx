@@ -8,8 +8,10 @@ function Footer() {
                 {/* Brand */}
                 <div className="flex-1">
                     <div className="flex items-center">
-                        <img src="money-wallet.svg" alt="" />
-                        <h3 className="font-semibold text-3xl ml-3">E-WALLET</h3>
+                        <img src="pros-logo-bw.png" alt="" 
+                            className="h-16"
+                        />
+                        <h3 className="font-semibold text-3xl ml-3">Prospera</h3>
                     </div>
                     <p className="text-sm mt-5">
                         Clarity gives you the blocks and components you need to create a
